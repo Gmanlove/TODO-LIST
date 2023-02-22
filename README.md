@@ -3,22 +3,47 @@
 
 - Create the to-do List project with webpack. Ultimately, the user should be able to add an item and delete the item
 
-## Live
-
-- [Live Demo Link]()
-
 
 ## Built With
 
-- Html
-- CSS
-- JavaScript
+- ★ webpack.
+- HTML(HTML-5).
+- CSS(Flexbox).
+- javaScript (ES6).
+- Github flow.
+- Linters.
 
 ## Additional Tools
 
 - WebHint
 - Stylelint
 - ESlint
+
+
+<!-- Features -->
+
+### Key Features <a name="key-features"></a>
+### In this project we :
+
+- Use array of some simple to do tasks contain three keys:
+  - description [string].
+  - completed.
+  - index: [number].
+- function to iterate over the tasks array and populate an HTML list item element for each task.
+- ★ Use webpack to bundle JavaScript.
+- Use NPM.
+- Use webpack.
+- Use webpack-cli.
+- Use css-loader.
+- Use style-loader.
+- Modify webpack.config.js
+- use HtmlWebpackPlugin.
+- ★ Setup local dev server
+- Add Linters for HTML/CSS.
+- Use best practices for HTML & CSS.
+- Update README file.
+- Add Mark up to the .html file.
+- Add style to the web site.
 
 ## Getting Started
 To get a local copy up and running follow these simple example steps.

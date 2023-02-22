@@ -1,0 +1,149 @@
+html {
+  font-family: 'Playfair Display', sans-serif;
+}
+
+body {
+  background-color: hwb(240 9% 91%);
+  background-image: -webkit-linear-gradient(65deg, #3bd6c9 40%, #46dd39 60%);
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.section-container {
+  text-align: center;
+  width: 50%;
+  margin: 30px 25%;
+  padding: 20px 0;
+  color: rgb(16, 15, 15);
+  background-color: rgb(245, 245, 245);
+  background-image: -webkit-linear-gradient(65deg, #e0e8e7 40%, #ece918 60%);
+}
+
+.con {
+  width: 80%;
+  margin: 50px 10% 0 5%;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px 12px rgba(0, 0, 0, 0.3);
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 44px;
+  padding: 12px;
+}
+
+.fa-solid {
+  color: #4e4e4e;
+  cursor: pointer;
+}
+
+#add-items {
+  width: 90%;
+  padding: 0.7rem;
+  font-size: large;
+  font-style: italic;
+}
+
+.head h1 {
+  color: #4e4e4e;
+  font-weight: 700;
+  font-style: italic;
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 30px;
+}
+
+.yes-list {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px 12px rgba(0, 0, 0, 0.3);
+  padding: 12px;
+  width: 80%;
+  margin: 1px 5%;
+}
+
+.take-off {
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px 12px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  width: fit-content;
+  width: 80%;
+  margin: 1px 5%;
+  background: inherit;
+  border-color: transparent;
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 1.2em;
+  color: #201e1e;
+  cursor: pointer;
+  align-items: center;
+  align-content: center;
+}
+
+.fas {
+  transform: rotate(90deg);
+  color: #4e4e4e;
+  margin-right: 5px;
+}
+
+.yes-list input {
+  border-color: transparent;
+  background-color: inherit;
+  outline: none;
+  color: #121010;
+}
+
+.yes-list input::placeholder {
+  font-family: 'playfair Display', sans-serif;
+  font-size: 1.2em;
+  color: #1d1c1c;
+  font-style: italic;
+}
+
+/* ---dynamic----- */
+
+.do-all {
+  height: 30px;
+  box-shadow: 5px 5px 15px 12px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  padding: 12px;
+  width: 80%;
+  margin: 1px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.do-all .dos {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.dos p {
+  font-family: 'Playfair Display', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.1em;
+}
+
+.fa {
+  margin-right: 5px;
+  color: #4e4e4e;
+}
+
+.d-none {
+  display: none;
+}
+
+.fa-trash-alt {
+  transform: rotate(0deg);
+}
+
+.line-through {
+  text-decoration: line-through;
+  color: red;
+}
