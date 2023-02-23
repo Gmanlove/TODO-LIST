@@ -1,3 +1,4 @@
+/* eslint-disable import/no-mutable-exports */
 const submit = document.querySelector('.uzo');
 const tasksDiv = document.querySelector('.todos');
 export const taskInput = document.querySelector('.add-todo input');
