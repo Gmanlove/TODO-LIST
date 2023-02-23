@@ -1,27 +1,35 @@
+/* eslint-disable import/no-mutable-exports */
 const submit = document.querySelector('.uzo');
 const tasksDiv = document.querySelector('.todos');
-const taskInput = document.querySelector('.add-todo input');
+export const taskInput = document.querySelector('.add-todo input');
 
 let editId;
 let isEditTask = false;
 let tasks = JSON.parse(localStorage.getItem('task-list'));
 
 window.editTask = (taskId, taskDescripton) => {
-  editId = taskId - 1;
+  editId = taskId;
   isEditTask = true;
   taskInput.value = taskDescripton;
+  taskInput.focus();
 };
 
-const addElemToPage = () => {
+export const addElemToPage = () => {
   let div = '';
   if (tasks) {
     tasks.forEach((task) => {
+      let isCompleted;
+      if (task.completed === true) {
+        isCompleted = 'thicked';
+      } else {
+        isCompleted = '';
+      }
       div += `
         <div class='todo' data-id='task.id'>
-          <input id="${task.index}" class='checkbox' onclick='updateCompleted(this)' type="checkbox">
-          <p id='${task.index}'class='text' contenteditable="false">${task.descripton}</p>
+          <input id="${task.index}" class='checkbox' type="checkbox" onclick='updateStatus(this)'>
+          <p id='${task.index}'class='text ${isCompleted}' contenteditable="false">${task.descripton}</p>
           <button type="button"  id="${task.index}" class='edit' >
-          <span onclick='editTask(${task.index}, "${task.descripton}")' class="material-symbols-outlined">edit</span>
+          <span onclick='editTask(${task.index - 1}, "${task.descripton}")' class="material-symbols-outlined">edit</span>
           </button>
           <button type="button"  id="${task.index}" class='del' onclick='del(${task.index})' >
           <span class='material-symbols-outlined del'>delete</span>
@@ -83,6 +91,9 @@ submit.addEventListener('click', () => {
     tasks[editId].descripton = userTask;
   }
   taskInput.value = '';
+  taskInput.focus();
   localStorage.setItem('task-list', JSON.stringify(tasks));
   addElemToPage();
 });
+
+export { tasks };
