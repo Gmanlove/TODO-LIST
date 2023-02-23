@@ -56,7 +56,7 @@ button {
 }
 
 .remove a {
-  color: #38036a;
+  color: hwb(0 5% 16%);
   text-decoration: none;
   font-size: large;
 }
@@ -98,5 +98,10 @@ button {
 }
 
 .checkbox {
-  margin-right: 2rem;
+  margin-right: 1rem;
+}
+
+.thicked {
+  text-decoration: line-through double;
+  color: #e21422;
 }
