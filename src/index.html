@@ -1,39 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/d6cd3c7604.js" crossorigin="anonymous"></script>
-    <title>Todo List</title>
-</head>
-<body>
-    <section class="section-container">
-        
-        <div class="head con">
-            <h1>Today's To Do</h1>
-            <i class="fa-solid fa-rotate"></i>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <title>To-do</title>
+  </head>
 
-        <div class="list-items">
-        <form action="" id="put-form">
-            <div class="yes-list">
-            <input type="text" 
-            placeholder="Add to your list..."
-            name="add-item"
-            id="add-items">
-            <i class="fas fa-level-down-alt"></i>
-            </div>
-        
+  <body>
+    <section>
+      <header class="first">
+        <h1>Today's To Do</h1>
+        <button type="submit">
+          <span class="material-symbols-outlined"> autorenew </span>
+        </button>
+      </header>
 
-        
-        <div class="list-todo"></div>
+      <div class="add-todo" action="">
+        <input type="text" name="" id="todo" placeholder="Add to your list" />
+        <button type="submit" class="uzo">
+          <span class="material-symbols-outlined"> keyboard_return </span>
+        </button>
+      </div>
 
-
-        <button type="submit" class="take-off">Clear all completed</button>
-        </form>
-
-        </div>
+      <div class="todos"></div>
+      <p class="remove"><a href="#">Clear All Completed</a></p>
     </section>
-</body>
+  </body>
 </html>
